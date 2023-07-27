@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#000" android:padding="15dp" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10sp" android:layout_gravity="center_vertical" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="i:menus.hostgame.info"/>
+            <CheckBox android:id="@+id/useMods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="i:menus.hostgame.modsLabel"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="i:menus.hostgame.passwordLabel"/>
+                <EditText android:id="@+id/gamePassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="8"/>
+            </LinearLayout>
+            <LinearLayout android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textSize="12sp" android:id="@+id/hostgame_startPublic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="i:menus.hostgame.startButtonPublic"/>
+                <Button android:textSize="12sp" android:id="@+id/hostgame_startPrivate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="i:menus.hostgame.startButtonPrivate"/>
+                <Button android:textSize="12sp" android:id="@+id/hostgame_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="i:menus.hostgame.cancelButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="frametitlecolour">#00d41f</color>
+    <color name="framecolour">#00d41f</color>
+    <color name="whitecolour">#ffffff</color>
+    <color name="redcolour">#ff0000</color>
+    <color name="notecolour">#b0f3ff</color>
+</resources>

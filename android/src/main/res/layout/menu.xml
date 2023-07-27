@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/titleInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5px" android:text="" android:layout_alignParentRight="true"/>
+    <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:fillViewport="true" tabindex="-1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.7">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/TitleImage" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5px">
+                    <Button android:textStyle="bold" android:id="@+id/buyButton" android:paddingTop="10px" android:paddingBottom="10px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Buy now!" android:layout_x="12px" android:layout_y="12px" style="@style/MenuButton"/>
+                    <Button android:textStyle="bold" android:id="@+id/startgameButton" android:paddingTop="14px" android:paddingBottom="14px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Continue" android:layout_x="12px" android:layout_y="12px" style="@style/MenuButton"/>
+                    <Button android:textStyle="bold" android:id="@+id/menuCustomButton" android:paddingTop="14px" android:paddingBottom="14px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Single Player" android:layout_x="12px" android:layout_y="12px" style="@style/MenuButton"/>
+                    <Button android:textStyle="bold" android:id="@+id/multiplayerButton" android:paddingTop="14px" android:paddingBottom="14px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Multiplayer" android:layout_x="12px" android:layout_y="12px" style="@style/MenuButton"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px">
+                        <Button android:id="@+id/settingsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings" android:singleLine="true" style="@style/MenuButton"/>
+                        <Button android:textStyle="bold" android:id="@+id/helpButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Help" android:singleLine="true" style="@style/MenuButton"/>
+                        <Button android:textStyle="bold" android:id="@+id/modsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Mods" android:singleLine="true" style="@style/MenuButton"/>
+                        <Button android:id="@+id/exitgameButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Exit" style="@style/MenuButton"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:textSize="14pt" android:layout_gravity="top|left" android:id="@+id/levelButtonBack" android:background="@android:color/transparent" android:padding="7dp" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/back_circle" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14pt" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/LevelTextTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Map"/>
+        <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/ScrollView02" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/replayHolder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
